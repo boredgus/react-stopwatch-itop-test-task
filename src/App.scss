@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #d1d4b5;
+    font-family: 'IBM Plex Sans', sans-serif;;
+}
+#root{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.App{
+    width: 50%;
+    margin: auto auto;
+    background-color: #1d406e;
+    border-radius: 20px;
+    padding: 1.5em;
+    h1{
+        margin: 0;
+        font-size: 4em;
+        letter-spacing: 3px;
+        color: #f0ec84;
+        text-align: center;
+    }
+    .timer{
+        margin: .2em 0 .3em;
+        text-align: center;
+        font-size: 7em;
+        color: #d5ecff;
+    }
+    .actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-size: 1.3em;
+            background-color: #b8b8b8;
+            color: #111f31;
+            border: none;
+            margin: 0 1em .5em;
+            padding: .3em 0;
+            width: 120px;
+            outline: none;
+            border-radius: 10px;
+            transition: .3s;
+            &:active, &:hover{
+                background-color: #fff;
+            }
+        }
+    }
+}

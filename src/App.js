@@ -49,10 +49,10 @@ function App() {
     dispatch(resetTimer());
     clearTimeout(timeout);
   }
-  
+
   return (
     <div className="App">
-      <h1>Timer</h1>
+      <h1>Stopwatch</h1>
       <div className="timer">
         {hours < 10 ? "0" + hours : hours}:{minutes < 10 ? "0" + minutes : minutes}:{seconds < 10 ? "0" + seconds : seconds}
       </div>

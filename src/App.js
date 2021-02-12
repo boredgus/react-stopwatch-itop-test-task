@@ -1,7 +1,7 @@
 import './App.scss';
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleButton1Text, setTime, startTimer, pauseTimer, resetTimer, setTimeStamp } from "./redux"
+import { toggleButton1Text, setTime, startTimer, pauseTimer, resetTimer } from "./redux"
 
 function App() {
   const [timeStamp, setTimestamp] = useState(0);

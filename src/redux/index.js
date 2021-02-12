@@ -28,13 +28,6 @@ export function resetTimer() {
         type: "RESET_TIMER"
     }
 }
-export function setTimeStamp(index, value) {
-    return {
-        type: "SET_TIMESTAMP",
-        index,
-        value
-    }
-}
 const initialTimer = {
     isStarted: false,
     button1Text: "Start",
@@ -84,14 +77,6 @@ export function timerReducer(timer = initialTimer, action) {
                     hours: 0,
                     minutes: 0,
                     seconds: 0
-                }
-            }
-        case "SET_TIMESTAMP":
-            console.log("aga")
-            return {
-                ...timer,
-                timeStamp: {
-                    [action.index]: action.value
                 }
             }
         default:

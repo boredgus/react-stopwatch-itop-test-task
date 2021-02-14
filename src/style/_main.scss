@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 body{
     margin: 0;
     background-color: #d1d4b5;
-    font-family: 'IBM Plex Sans', sans-serif;;
 }
 #root{
     height: 100vh;
@@ -25,9 +25,9 @@ body{
         text-align: center;
     }
     .timer{
-        margin: .2em 0 .3em;
+        margin: .7em 0 .8em;
         text-align: center;
-        font-size: 7em;
+        font-size: 5em;
         color: #d5ecff;
     }
     .actions{
@@ -35,7 +35,7 @@ body{
         flex-direction: row;
         justify-content: center;
         button{
-            font-family: 'IBM Plex Sans', sans-serif;
+            // font-family: 'IBM Plex Sans', sans-serif;
             font-weight: bold;
             letter-spacing: 5px;
             font-size: 1.3em;

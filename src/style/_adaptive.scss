@@ -1,0 +1,33 @@
+@media (max-width: 1240px) {
+    .App{
+        width: 65%;
+        h1{
+            font-size: 3em;
+        }
+        .timer{
+            font-size: 4em;
+        }
+        .actions button{
+            font-size: 1.1em;
+            letter-spacing: 3px;
+            padding: .4em .8em;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .App{
+        width: 90%;
+        h1{
+            font-size: 2em;
+        }
+        .timer{
+            font-size: 3em;
+        }
+        .actions button{
+            font-size: 1em;
+            letter-spacing: 2px;
+            padding: .3em .7em;
+        }
+    }
+}

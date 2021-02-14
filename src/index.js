@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App1 from './App_rxjs';
 
 // import App2 from './App_redux';

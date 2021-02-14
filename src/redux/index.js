@@ -8,11 +8,6 @@ export function setTime(hours, minutes, seconds) {
         seconds
     }
 }
-export function toggleButton1Text() {
-    return {
-        type: "TOGGLE_BUTTON1_TEXT"
-    }
-}
 export function startTimer() {
     return {
         type: "START_TIMER"
@@ -21,6 +16,11 @@ export function startTimer() {
 export function pauseTimer() {
     return {
         type: "PAUSE_TIMER"
+    }
+}
+export function stopTimer() {
+    return {
+        type: "STOP_TIMER"
     }
 }
 export function resetTimer() {
@@ -35,10 +35,6 @@ const initialTimer = {
         hours: 0,
         minutes: 0,
         seconds: 0
-    },
-    timeStamp: {
-        first: 0,
-        second: 0
     }
 }
 export function timerReducer(timer = initialTimer, action) {
@@ -52,15 +48,11 @@ export function timerReducer(timer = initialTimer, action) {
                     seconds: action.seconds
                 }
             }
-        case "TOGGLE_BUTTON1_TEXT":
-            return {
-                ...timer,
-                button1Text: timer.button1Text === "Start" ? "Stop" : "Start"
-            }
         case "START_TIMER":
             return {
                 ...timer,
-                isStarted: true
+                isStarted: true,
+                button1Text: "Stop"
             }
         case "PAUSE_TIMER":
             return {
@@ -68,10 +60,20 @@ export function timerReducer(timer = initialTimer, action) {
                 isStarted: false,
                 button1Text: "Start"
             }
-        case "RESET_TIMER":
+        case "STOP_TIMER":
             return {
                 ...timer,
                 isStarted: false,
+                button1Text: "Start",
+                time: {
+                    hours: 0,
+                    minutes: 0,
+                    seconds: 0
+                }
+            }
+        case "RESET_TIMER":
+            return {
+                ...timer,
                 button1Text: "Start",
                 time: {
                     hours: 0,

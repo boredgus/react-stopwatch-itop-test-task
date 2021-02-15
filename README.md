@@ -7,6 +7,7 @@ You can see it [&#10059; here &#10059;](https://boredgus.github.io/react-stopwat
 Simple stopwatch with basic functionality, except of "Wait" button - it requires double-click.
 ### Used technologies
 1. ReactJS
+1. RxJS
 1. Redux
 1. SCSS
 
